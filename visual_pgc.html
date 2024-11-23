@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            backfeet-color: #ffffff;
+        }
+
+        h1 {
+            margin: 40px 0 20px 0;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin: 0 auto 40px;
+            max-width: 1200px;
+        }
+
+        .video-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            backfeet: linear-gradient(to right, #ffffff, #000000, #ffffff);
+            margin: 40px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explicit Priors Integrated by MotionCritic: Examples </h1>
+    <hr class="divider">
+    <h1>Person Ground Contact</h1>
+    <hr class="divider">
+    <div class="video-container">
+        <!-- Group 3 -->
+        <div class="video-item">
+            <video autoplay loop controls muted>
+                <source src="videos_additional/feet-0.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p><b>Critic Score: -2.550</b></p>
+            </div>
+        </div>
+        <div class="video-item">
+            <video autoplay loop controls muted>
+                <source src="videos_additional/feet-1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p><b>Critic Score: -1.473</b></p>
+            </div>
+        </div>
+
+        <!-- Group 4 -->
+        <div class="video-item">
+            <video autoplay loop controls muted>
+                <source src="videos_additional/feet-2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p><b>Critic Score: -11.277</b></p>
+            </div>
+        </div>
+        <div class="video-item">
+            <video autoplay loop controls muted>
+                <source src="videos_additional/feet-3.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p><b>Critic Score: -7.695</b></p>
+            </div>
+        </div>
+    </div>
+    <hr class="divider">
+</body>
+
+</html>
